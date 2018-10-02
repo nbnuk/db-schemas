@@ -465,6 +465,7 @@
           default: a value that should be used if no value is specified
             when adding a document.
         -->
+        <field name="updated_rr" type="date" default="NOW"/>
         <!-- start of BIE Biocache Fields -->
         <field name="_version_" type="long" indexed="true" stored="true"/>
         <field name="id" type="string" indexed="true" stored="true" multiValued="false"/>
@@ -655,8 +656,9 @@
         <field name="raw_sex" type="string" indexed="true" stored="true" multiValued="true" />
 
         <!-- verification -->
-        <field name="georeference_verification_status" type="string" indexed="true" stored="true" multiValued="true" />
-        <field name="identification_verification_status" type="string" indexed="true" stored="true" multiValued="true" />
+        <field name="georeference_verification_status" type="string" indexed="true" stored="true" multiValued="false" />
+        <field name="identification_verification_status" type="string" indexed="true" stored="true" multiValued="false" />
+        <!-- RR note changed multivalue -->
 
         <!-- This is for Citzen Science records only -->
         <field name="user_id" type="string_lowercase" indexed="true" stored="true" multiValued="false" omitNorms="false" />
