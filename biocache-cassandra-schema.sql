@@ -189,7 +189,7 @@ CREATE TABLE occ.qa (
     userrole text,
     uuid text,
     value text,
-    PRIMARY KEY (rowkey, code, userid)
+    PRIMARY KEY (rowkey, code, userid, relateduuid)
 ) WITH CLUSTERING ORDER BY (code ASC, userid ASC)
     AND bloom_filter_fp_chance = 0.01
     AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
