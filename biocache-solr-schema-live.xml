@@ -631,7 +631,7 @@ TODO: investigate exactly how these are added, and test if they overload the liv
         <field name="centi_cell_id" type="int" indexed="true" stored="true" multiValued="false" omitNorms="false" />
         <field name="tenmilli_cell_id" type="int" indexed="true" stored="true" multiValued="false" omitNorms="false" /-->
 
-        <field name="year" type="string" indexed="true" stored="true" multiValued="false"  />
+        <field name="year" type="int" indexed="true" stored="true" multiValued="false"  />
         <field name="month" type="string" indexed="true" stored="true" multiValued="false"  />
         <!-- Not displayed in search results -->
         <!-- field name="basis_of_record_id" type="int" indexed="false" stored="true" multiValued="false" omitNorms="false" / -->
