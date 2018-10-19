@@ -174,13 +174,13 @@ CREATE TABLE occ.qa (
     rowkey text,
     code text,
     userid text,
+    relateduuid text,
     comment text,
     created text,
     name text,
     problemasserted text,
     qastatus text,
     referencerowkey text,
-    relateduuid text,
     snapshot text,
     userdisplayname text,
     useremail text,
@@ -190,7 +190,7 @@ CREATE TABLE occ.qa (
     uuid text,
     value text,
     PRIMARY KEY (rowkey, code, userid, relateduuid)
-) WITH CLUSTERING ORDER BY (code ASC, userid ASC)
+) WITH CLUSTERING ORDER BY (code ASC, userid ASC, relateduuid ASC)
     AND bloom_filter_fp_chance = 0.01
     AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
     AND comment = ''
@@ -212,7 +212,6 @@ CREATE TABLE occ.occ (
     acceptednameusage text,
     acceptednameusageid text,
     accessrights text,
-    aphiaid text,
     associatedmedia text,
     associatedoccurrences text,
     associatedoccurrences_p text,
@@ -310,6 +309,7 @@ CREATE TABLE occ.occ (
     earliestperiodorlowestsystem text,
     easting text,
     easting_p text,
+    el text,
     el_p text,
     endday_p text,
     enddayofyear text,
