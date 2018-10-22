@@ -498,6 +498,7 @@ CREATE TABLE occ.occ (
     organismquantitytype text,
     organismremarks text,
     organismscope text,
+    organismstatus text,
     originaldecimallatitude text,
     originaldecimallongitude text,
     originalnameusage text,
