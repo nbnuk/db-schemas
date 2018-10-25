@@ -735,6 +735,7 @@
         <field name="point-0.1" type="string" indexed="true" stored="true" omitNorms="true" />
         <field name="point-1" type="string" indexed="true" stored="true" omitNorms="true" />
         <field name="verifier" type="string" indexed="true" stored="true" omitNorms="true" />
+        <field name="occurrence_decade_i" type="tint" indexed="true" stored="true" omitNorms="true" />
 
         <!-- Some ALA dynamic fields -->
         <!--
