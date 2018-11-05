@@ -1059,6 +1059,9 @@
     <copyField source="grid_ref_10000" dest="text"/>
     <copyField source="grid_ref_100000" dest="text"/>
 
+    <copyField source="collector" dest="collector_text"/>
+    <copyField source="identified_by" dest="identified_by_text"/>
+    <copyField source="taxon_concept_lsid" dest="lsid"/>
 
     <!-- Above, multiple source fields are copied to the [text] field.
        Another way to map multiple source fields to the same
